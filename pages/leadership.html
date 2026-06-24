@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership - Kingdom Ventures</title>
+<meta name="description" content="Meet the leadership team of Kingdom Ventures - our Chairman, Board of Directors, and Executive Leadership driving our vision and growth.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+/* ── LEADERSHIP PAGE SPECIFIC STYLES ── */
+.lead-hero {
+  background: linear-gradient(135deg, rgba(10,22,40,0.92) 0%, rgba(10,22,40,0.75) 100%), url('../images/2.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0 100px;
+  text-align: center;
+  position: relative;
+}
+.lead-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 5vw, 56px);
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.lead-hero p {
+  color: rgba(255,255,255,0.7);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ── CHAIRMAN FEATURED ── */
+.chairman-featured {
+  background: var(--white);
+}
+.chairman-featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.chairman-featured-img {
+  position: relative;
+  text-align: center;
+}
+.chairman-featured-img .img-frame {
+  width: 100%;
+  max-width: 320px;
+  height: 400px;
+  border-radius: 16px;
+  background: var(--light);
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(10,22,40,0.15);
+}
+.chairman-featured-img .img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.chairman-featured-img .img-badge {
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 8px 24px;
+  border-radius: 30px;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(234,150,38,0.3);
+}
+.chairman-featured-info .section-label {
+  margin-bottom: 12px;
+}
+.chairman-featured-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 3.5vw, 40px);
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.chairman-featured-info .chairman-title {
+  font-size: 13px;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.chairman-featured-info p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.9;
+  margin-bottom: 14px;
+}
+.chairman-signature-block {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 2px solid var(--gold);
+}
+.chairman-signature-block .sign-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+}
+.chairman-signature-block .sign-title {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ── LEADERSHIP GRID (Board & Executive) ── */
+.leadership-grid-section {
+  background: var(--light);
+}
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.leader-profile-card {
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(10,22,40,0.06);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  position: relative;
+}
+.leader-profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(10,22,40,0.12);
+}
+.leader-profile-card .card-img {
+  height: 260px;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  overflow: hidden;
+}
+.leader-profile-card .card-img::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(10,22,40,0.5), transparent);
+}
+.leader-profile-card .card-img .card-icon-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 54px;
+  color: white;
+  background: var(--navy);
+}
+.leader-profile-card .card-body {
+  padding: 20px 20px 24px;
+}
+.leader-profile-card .card-body h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+.leader-profile-card .card-body .role {
+  font-size: 12px;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.leader-profile-card .card-body p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.leader-profile-card .card-body .leader-social {
+  display: flex;
+  gap: 8px;
+}
+.leader-profile-card .card-body .leader-social a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  font-size: 13px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.leader-profile-card .card-body .leader-social a:hover {
+  background: var(--gold);
+  color: white;
+}
+
+/* ── SECTION DIVIDER TITLE ── */
+.section-title-left {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(24px, 3vw, 36px);
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.section-desc-left {
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+/* ── CORPORATE GOVERNANCE ── */
+.gov-leadership {
+  background: var(--white);
+}
+.gov-structure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 48px;
+  align-items: start;
+}
+.gov-org-chart {
+  background: var(--light);
+  border-radius: 14px;
+  padding: 36px;
+}
+.gov-org-chart h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--navy);
+  margin-bottom: 24px;
+  text-align: center;
+}
+.org-tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.org-node {
+  padding: 10px 28px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  min-width: 140px;
+}
+.org-node.board-node {
+  background: var(--navy);
+  color: white;
+  font-size: 15px;
+  padding: 14px 36px;
+}
+.org-node.gold-node {
+  background: var(--gold);
+  color: var(--navy);
+}
+.org-node.dark-node {
+  background: var(--navy2);
+  color: white;
+}
+.org-node.blue-node {
+  background: var(--blue-accent);
+  color: white;
+}
+.org-connector {
+  width: 2px;
+  height: 24px;
+  background: var(--gold);
+}
+.org-connector-h {
+  height: 2px;
+  width: 40px;
+  background: var(--gold);
+}
+.org-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.gov-desc {
+  padding: 36px;
+}
+.gov-desc h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+.gov-desc p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.gov-principles {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.gov-principle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--navy);
+}
+.gov-principle i {
+  color: var(--gold);
+  font-size: 16px;
+  width: 20px;
+}
+
+/* ── LEADERSHIP PHILOSOPHY ── */
+.philosophy-section {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+}
+.philosophy-section .section-title {
+  color: white;
+}
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.philosophy-card {
+  padding: 36px 24px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.philosophy-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.1);
+}
+.philosophy-card .phi-icon {
+  font-size: 36px;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.philosophy-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+}
+.philosophy-card p {
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
+}
+
+/* ── ADVISORY BOARD ── */
+.advisory-section {
+  background: var(--light);
+}
+.advisory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.advisory-card {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 36px 24px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(10,22,40,0.05);
+  transition: transform 0.3s ease;
+}
+.advisory-card:hover {
+  transform: translateY(-6px);
+}
+.advisory-card .advisory-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background:#ea962630;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 32px;
+  color: var(--gold);
+}
+.advisory-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+.advisory-card .advisory-role {
+  font-size: 12px;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.advisory-card p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .chairman-featured-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+  .chairman-featured-info .section-label {
+    justify-content: center;
+  }
+  .chairman-signature-block {
+    text-align: center;
+  }
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .philosophy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gov-structure {
+    grid-template-columns: 1fr;
+  }
+  .advisory-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+  .advisory-grid {
+    grid-template-columns: 1fr;
+  }
+  .chairman-featured-img .img-frame {
+    height: 320px;
+    max-width: 260px;
+  }
+  .org-row {
+    flex-direction: column;
+  }
+  .org-connector-h {
+    width: 2px;
+    height: 20px;
+  }
+  .leader-profile-card .card-img {
+    height: 200px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="inner">
+    <span class="left"><i class="fas fa-bullhorn"></i> Built on Vision. Driven by Excellence.</span>
+    <div>
+      <a href="mailto:info@kingdomventures.in"><i class="fas fa-envelope"></i> info@kingdomventures.in</a>
+      <a href="tel:+918012345678"><i class="fas fa-phone"></i> +91 80 1234 5678</a>
+      <a href="#"><i class="fas fa-globe"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div class="logo-icon" style="width:80px;height:41px;">
+        <img src="../images/Crown.png" style="width:100%;" alt="Kingdom Ventures">
+      </div>
+      <div class="logo-text">
+        <span class="name">KINGDOM</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div class="section-divider" style="width:10px;height:1px;"></div>
+          <span class="sub">VENTURES</span>
+          <div class="section-divider" style="width:10px;height:1px;"></div>
+        </div>
+      </div>
+    </a>
+    <nav id="navbar">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="businesses.html">Businesses</a>
+      <a href="investors.html">Investments</a>
+      <a href="leadership.html" class="active">Leadership</a>
+      <a href="media.html">Media</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="#" class="btn-partner">Partner With Us <i class="fas fa-arrow-right"></i></a>
+    </nav>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+
+<!-- MOBILE SIDEBAR OVERLAY -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-sidebar" id="mobileSidebar">
+  <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+  <div class="mobile-sidebar-links">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="businesses.html">Businesses</a>
+    <a href="investors.html">Investments</a>
+    <a href="leadership.html">Leadership</a>
+    <a href="media.html">Media</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="#" class="btn-partner" style="margin-top:20px;display:flex;justify-content:center;">Partner With Us <i class="fas fa-arrow-right"></i></a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="lead-hero">
+  <div class="container">
+    <div class="section-label" style="color:var(--gold);margin-bottom:12px;">LEADERSHIP</div>
+    <h1>Visionary Leaders<br>Driving Excellence</h1>
+    <p>Our leadership team brings decades of experience, strategic insight, and unwavering commitment to building a diversified corporate group that creates lasting value for all stakeholders.</p>
+  </div>
+</section>
+
+<!-- CHAIRMAN FEATURED -->
+<section class="chairman-featured">
+  <div class="container">
+    <div class="chairman-featured-grid">
+      <div class="chairman-featured-img fade-up">
+        <div class="img-frame">
+          <img src="../images/6.png" alt="Group Chairman">
+        </div>
+        <div class="img-badge">Group Chairman</div>
+      </div>
+      <div class="chairman-featured-info fade-up fade-up-delay-1">
+        <div class="section-label">CHAIRMAN'S MESSAGE</div>
+        <h2>S. Rajendran</h2>
+        <div class="chairman-title">Founder & Group Chairman</div>
+        <p>"At Kingdom Ventures, we believe that leadership is not about position—it is about purpose. Our journey is guided by a vision to build enterprises that stand for integrity, innovation, and lasting impact. Every business we nurture, every partnership we forge, and every community we serve is driven by a commitment to excellence and a responsibility to create value for generations to come."</p>
+        <p>"Our leadership philosophy is rooted in empowering people, fostering innovation, and maintaining the highest standards of corporate governance. We are building an organization where talent thrives, ideas flourish, and success is shared."</p>
+        <div class="chairman-signature-block">
+          <div class="sign-name">S. Rajendran</div>
+          <div class="sign-title">Founder & Group Chairman, Kingdom Ventures</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOARD OF DIRECTORS -->
+<section class="leadership-grid-section">
+  <div class="container">
+    <div class="section-center">
+      <div class="section-divider"></div>
+      <h2 class="section-title">BOARD OF DIRECTORS</h2>
+      <div class="section-divider"></div>
+    </div>
+    <p class="section-desc">Our Board comprises visionary leaders with diverse expertise across industries, providing strategic guidance and governance excellence.</p>
+    <div class="leadership-grid">
+      <div class="leader-profile-card fade-up">
+        <div class="card-img" style="background-image:url('../images/6.png');background-size:cover;background-position:center top;">
+        </div>
+        <div class="card-body">
+          <h4>S. Rajendran</h4>
+          <div class="role">Chairman</div>
+          <p>Founder and visionary leader with over 30 years of experience in building and scaling enterprises across multiple sectors.</p>
+          <div class="leader-social">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="leader-profile-card fade-up fade-up-delay-1">
+        <div class="card-img">
+          <div class="card-icon-fallback"><i class="fas fa-user-tie"></i></div>
+        </div>
+        <div class="card-body">
+          <h4>Dr. Priya Mehta</h4>
+          <div class="role">Independent Director</div>
+          <p>Eminent academician and corporate strategist with expertise in governance, education policy, and institutional development.</p>
+          <div class="leader-social">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="leader-profile-card fade-up fade-up-delay-2">
+        <div class="card-img">
+          <div class="card-icon-fallback"><i class="fas fa-user-tie"></i></div>
+        </div>
+        <div class="card-body">
+          <h4>R. Krishnan</h4>
+          <div class="role">Non-Executive Director</div>
+          <p>Seasoned finance professional with deep expertise in investment banking, mergers & acquisitions, and corporate finance.</p>
+          <div class="leader-social">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="leader-profile-card fade-up fade-up-delay-3">
+        <div class="card-img">
+          <div class="card-icon-fallback"><i class="fas fa-user-tie"></i></div>
+        </div>
+        <div class="card-body">
+          <h4>Anita Sharma</h4>
+          <div class="role">Independent Director</div>
+          <p>Technology leader and digital transformation expert with experience across global tech firms and startup ecosystems.</p>
+          <div class="leader-social">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXECUTIVE LEADERSHIP -->
+<section>
+  <div class="container">
+    <div class="section-center">
+      <div class="section-divider"></div>
+      <h2 class="section-title">EXECUTIVE LEADERSHIP</h2>
+      <div class="section-divider"></div>
+    </div>
+    <p class="section-desc">Our executive team drives operational excellence, innovation, and growth across all business verticals.</p>
+    <div class="leadership-grid">
+      <div class="leader-profile-card fade-up">
+        <div class="card-img">
+          <div class="card-icon-fallback"><i class="fas fa-user-tie"></i></div>
+        </div>
+        <div class="card-body">
+          <h4>Arun Kumar</h4>
+          <div class="role">Chief Executive Officer</div>
+          <p>Strategic leader with 25+ years of experience in corporate management, business development, and multi-industry operations.</p>
+          <div class="leader-social">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="leader-profile-card fade-up fade-up-delay-1">
+        <div class="card-img">
+          <div class="card-icon-fallback"><i class="fas fa-user-tie"></i></div>
+        </div>
+        <div class="card-body">
+          <h4>Vikram Patel</h4>
+          <div class="role">Chief Operating Officer</div>
+          <p>Operations expert specializing in business process optimization, supply chain management, and large-scale project execution.</p>
+          <div class="leader-social">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="leader-profile-card fade-up fade-up-delay-2">
+        <div class="card-img">
+          <div class="card-icon-fallback"><i class="fas fa-user-tie"></i></div>
+        </div>
+        <div class="card-body">
+          <h4>Meera Nair</h4>
+          <div class="role">Chief Financial Officer</div>
+          <p>Finance professional with extensive experience in financial strategy, risk management, investor relations, and compliance.</p>
+          <div class="leader-social">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="leader-profile-card fade-up fade-up-delay-3">
+        <div class="card-img">
+          <div class="card-icon-fallback"><i class="fas fa-user-tie"></i></div>
+        </div>
+        <div class="card-body">
+          <h4>Dr. Sanjay Verma</h4>
+          <div class="role">Chief Technology Officer</div>
+          <p>Technology visionary driving digital transformation, AI initiatives, software development, and innovation across the group.</p>
+          <div class="leader-social">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="leader-profile-card fade-up fade-up-delay-4">
+        <div class="card-img">
+          <div class="card-icon-fallback"><i class="fas fa-user-tie"></i></div>
+        </div>
+        <div class="card-body">
+          <h4>Neha Gupta</h4>
+          <div class="role">Chief Human Resources Officer</div>
+          <p>People leader focused on talent acquisition, leadership development, organizational culture, and employee engagement.</p>
+          <div class="leader-social">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="leader-profile-card fade-up fade-up-delay-5">
+        <div class="card-img">
+          <div class="card-icon-fallback"><i class="fas fa-user-tie"></i></div>
+        </div>
+        <div class="card-body">
+          <h4>Rahul Singh</h4>
+          <div class="role">Chief Business Officer</div>
+          <p>Business development leader driving strategic partnerships, market expansion, and revenue growth across business verticals.</p>
+          <div class="leader-social">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP PHILOSOPHY -->
+<section class="philosophy-section">
+  <div class="container">
+    <div class="section-center">
+      <div class="section-divider" style="background:var(--gold);"></div>
+      <h2 class="section-title">LEADERSHIP PHILOSOPHY</h2>
+      <div class="section-divider" style="background:var(--gold);"></div>
+    </div>
+    <p style="color:rgba(255,255,255,0.6);font-size:13px;text-align:center;max-width:600px;margin:16px auto 0;line-height:1.7;">Our leadership principles guide every decision, action, and relationship across the Kingdom Ventures group.</p>
+    <div class="philosophy-grid">
+      <div class="philosophy-card fade-up">
+        <div class="phi-icon"><i class="fas fa-eye"></i></div>
+        <h4>Visionary Thinking</h4>
+        <p>We lead with a long-term perspective, anticipating trends and positioning our businesses for sustainable success.</p>
+      </div>
+      <div class="philosophy-card fade-up fade-up-delay-1">
+        <div class="phi-icon"><i class="fas fa-handshake"></i></div>
+        <h4>Integrity First</h4>
+        <p>We uphold the highest ethical standards, building trust through transparency, honesty, and accountability.</p>
+      </div>
+      <div class="philosophy-card fade-up fade-up-delay-2">
+        <div class="phi-icon"><i class="fas fa-users"></i></div>
+        <h4>Empower People</h4>
+        <p>We invest in our people, fostering a culture of innovation, collaboration, and continuous learning.</p>
+      </div>
+      <div class="philosophy-card fade-up fade-up-delay-3">
+        <div class="phi-icon"><i class="fas fa-chart-line"></i></div>
+        <h4>Drive Impact</h4>
+        <p>We measure success by the positive impact we create for stakeholders, communities, and the environment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVISORY BOARD -->
+<section class="advisory-section">
+  <div class="container">
+    <div class="section-center">
+      <div class="section-divider"></div>
+      <h2 class="section-title">STRATEGIC ADVISORS</h2>
+      <div class="section-divider"></div>
+    </div>
+    <p class="section-desc">Our strategic advisors bring specialized expertise and industry insights that help guide our growth and innovation.</p>
+    <div class="advisory-grid">
+      <div class="advisory-card fade-up">
+        <div class="advisory-avatar"><i class="fas fa-user-tie"></i></div>
+        <h4>Dr. K. Srinivasan</h4>
+        <div class="advisory-role">Education & Policy Advisor</div>
+        <p>Former Vice-Chancellor with deep expertise in higher education policy, curriculum development, and academic governance.</p>
+      </div>
+      <div class="advisory-card fade-up fade-up-delay-1">
+        <div class="advisory-avatar"><i class="fas fa-user-tie"></i></div>
+        <h4>Michael D'Souza</h4>
+        <div class="advisory-role">Technology & Innovation Advisor</div>
+        <p>Tech entrepreneur and innovation strategist with experience in scaling SaaS platforms and AI-driven solutions globally.</p>
+      </div>
+      <div class="advisory-card fade-up fade-up-delay-2">
+        <div class="advisory-avatar"><i class="fas fa-user-tie"></i></div>
+        <h4>Sunita Reddy</h4>
+        <div class="advisory-role">Manufacturing & Operations Advisor</div>
+        <p>Industry veteran with 35+ years in manufacturing excellence, supply chain optimization, and industrial operations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORPORATE GOVERNANCE & ORGANIZATION STRUCTURE -->
+<section class="gov-leadership">
+  <div class="container">
+    <div class="section-center">
+      <div class="section-divider"></div>
+      <h2 class="section-title">CORPORATE GOVERNANCE </h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="gov-structure">
+      <div class="gov-org-chart fade-up">
+        <h3>Organization Structure</h3>
+        <div class="org-tree">
+          <div class="org-node board-node">Board of Directors</div>
+          <div class="org-connector"></div>
+          <div class="org-node gold-node">Chairman</div>
+          <div class="org-connector"></div>
+          <div class="org-node dark-node">Chief Executive Officer (CEO)</div>
+          <div class="org-connector"></div>
+          <div class="org-row">
+            <div class="org-node blue-node" style="font-size:11px;padding:8px 16px;">Chief Operating Officer (COO)</div>
+            <div class="org-connector-h"></div>
+            <div class="org-node blue-node" style="font-size:11px;padding:8px 16px;">Chief Financial Officer (CFO)</div>
+          </div>
+          <div class="org-connector"></div>
+          <div class="org-row" style="flex-wrap:wrap;">
+            <div class="org-node" style="background:#dde8f5;color:var(--navy);font-size:11px;padding:6px 14px;">Shared Services</div>
+            <div class="org-connector-h"></div>
+            <div class="org-node" style="background:#dde8f5;color:var(--navy);font-size:11px;padding:6px 14px;">Business Units</div>
+          </div>
+        </div>
+      </div>
+      <div class="gov-desc fade-up fade-up-delay-1">
+        <h3>Our Governance Framework</h3>
+        <p>Kingdom Ventures is committed to the highest standards of corporate governance, ensuring transparency, accountability, and ethical conduct across all our operations and business relationships.</p>
+        <div class="gov-principles">
+          <div class="gov-principle">
+            <i class="fas fa-check-circle"></i>
+            <span>Independent Board oversight with diverse expertise</span>
+          </div>
+          <div class="gov-principle">
+            <i class="fas fa-check-circle"></i>
+            <span>Comprehensive code of conduct and ethical guidelines</span>
+          </div>
+          <div class="gov-principle">
+            <i class="fas fa-check-circle"></i>
+            <span>Robust risk management and internal controls</span>
+          </div>
+          <div class="gov-principle">
+            <i class="fas fa-check-circle"></i>
+            <span>Regular financial reporting and stakeholder communication</span>
+          </div>
+          <div class="gov-principle">
+            <i class="fas fa-check-circle"></i>
+            <span>ESG integration in business decision-making</span>
+          </div>
+          <div class="gov-principle">
+            <i class="fas fa-check-circle"></i>
+            <span>Whistleblower policy and grievance mechanism</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-banner">
+      <div>
+        <h3>Stay Updated with Kingdom Ventures</h3>
+        <p>Receive the latest corporate news, investment updates, and event invitations directly in your inbox.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <div class="newsletter-input-group">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon" style="width:80px;height:41px;">
+              <img src="../images/Crown.png" style="width:100%;" alt="Kingdom Ventures">
+            </div>
+            <div class="logo-text">
+        <span class="name">KINGDOM</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div class="section-divider" style="width:10px;height:1px;"></div>
+          <span class="sub">VENTURES</span>
+          <div class="section-divider" style="width:10px;height:1px;"></div>
+        </div>
+      </div>
+          </div>
+          <div class="footer-tagline">Built on Vision. Driven by Excellence.</div>
+          <div class="footer-desc">A diversified corporate group building sustainable businesses across Technology, Education, Manufacturing, Lifestyle, Infrastructure and Strategic Investments.</div>
+          <div class="footer-socials">
+            <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="investors.html">Investors</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="csr.html">CSR & Impact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Businesses</h5>
+          <ul>
+            <li><a href="businesses.html">Elshaddai Network Solutions</a></li>
+            <li><a href="businesses.html">Throne Recliners</a></li>
+            <li><a href="businesses.html">Ascending Software</a></li>
+            <li><a href="businesses.html">Emetria Academy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="#">Download Brochure</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <span>© 2026 Kingdom Ventures. All Rights Reserved. | "Built on Vision. Driven by Excellence."</span>
+        <div class="footer-bottom-links">
+          <a href="#">Sitemap</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button id="scrollToTop" class="scroll-to-top" title="Back to Top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- AI CHAT ASSISTANT -->
+<div class="ai-chat-btn" id="aiChatBtn">
+  <i class="fas fa-robot"></i>
+</div>
+<div class="ai-chat-window" id="aiChatWindow">
+  <div class="chat-header">
+    <span><i class="fas fa-robot"></i> KV Assistant</span>
+    <button id="chatClose"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <div class="chat-msg bot">
+      <div class="msg-content">Welcome to Kingdom Ventures! How can I help you today?<br><br>
+        <span class="chat-quick" data-q="Tell me about Emetria Academy">📚 Emetria Academy</span>
+        <span class="chat-quick" data-q="Show Throne Recliners">🛋️ Throne Recliners</span>
+        <span class="chat-quick" data-q="Career Opportunities">💼 Careers</span>
+        <span class="chat-quick" data-q="Contact Information">📞 Contact</span>
+      </div>
+    </div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="Type your question...">
+    <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

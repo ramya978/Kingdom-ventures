@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kingdom Ventures – Building Value. Creating Impact.</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Kingdom Ventures is a diversified corporate group engaged in Technology, Education, Manufacturing, Lifestyle, Infrastructure and Strategic Investments.">
+<meta name="keywords" content="Kingdom Ventures, corporate group, technology, education, manufacturing, investments, Bangalore">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +15,7 @@
 <!-- TOP BAR -->
 <div class="top-bar">
   <div class="inner">
-    <span class="left">Building Value. Creating Impact.</span>
+    <span class="left"><i class="fas fa-bullhorn"></i> Built on Vision. Driven by Excellence.</span>
     <div>
       <a href="mailto:info@kingdomventures.in"><i class="fas fa-envelope"></i> info@kingdomventures.in</a>
       <a href="tel:+918012345678"><i class="fas fa-phone"></i> +91 80 1234 5678</a>
@@ -25,31 +27,28 @@
 <!-- HEADER -->
 <header>
   <div class="header-inner">
-    <a href="#" class="logo">
-      <div class="logo-icon" style="width: 80px;
-    height: 41px;">
-        <img src="images/Crown.png" style="width: 100%;">
+    <a href="index.html" class="logo">
+      <div class="logo-icon" style="width:80px;height:41px;">
+        <img src="images/Crown.png" style="width:100%;" alt="Kingdom Ventures">
       </div>
       <div class="logo-text">
         <span class="name">KINGDOM</span>
-          <div style="display:flex; align-items:center; gap:10px;">
-             <div class="section-divider" style="    width: 10px;
-    height: 1px;"></div>
-        <span class="sub">VENTURES</span>
-           <div class="section-divider" style="    width: 10px;
-    height: 1px;"></div>
-          </div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div class="section-divider" style="width:10px;height:1px;"></div>
+          <span class="sub">VENTURES</span>
+          <div class="section-divider" style="width:10px;height:1px;"></div>
+        </div>
       </div>
     </a>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Businesses</a>
-      <a href="#">Investments</a>
-      <a href="#">Leadership</a>
-      <a href="#">Media</a>
-      <a href="#">Careers</a>
-      <a href="#">Contact Us</a>
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="pages/about.html">About Us</a>
+      <a href="pages/businesses.html">Businesses</a>
+      <a href="pages/investors.html">Investments</a>
+      <a href="pages/leadership.html">Leadership</a>
+      <a href="pages/media.html">Media</a>
+      <a href="pages/careers.html">Careers</a>
+      <a href="pages/contact.html">Contact Us</a>
       <a href="#" class="btn-partner">Partner With Us <i class="fas fa-arrow-right"></i></a>
     </nav>
     <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
@@ -61,89 +60,308 @@
 <div class="mobile-sidebar" id="mobileSidebar">
   <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
   <div class="mobile-sidebar-links">
-    <a href="#">Home</a>
-    <a href="#">About Us</a>
-    <a href="#">Businesses</a>
-    <a href="#">Investments</a>
-    <a href="#">Leadership</a>
-    <a href="#">Media</a>
-    <a href="#">Careers</a>
-    <a href="#">Contact Us</a>
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About Us</a>
+    <a href="pages/businesses.html">Businesses</a>
+    <a href="pages/investors.html">Investments</a>
+      <a href="pages/leadership.html">Leadership</a>
+    <a href="pages/media.html">Media</a>
+    <a href="pages/careers.html">Careers</a>
+    <a href="pages/contact.html">Contact Us</a>
     <a href="#" class="btn-partner" style="margin-top:20px;display:flex;justify-content:center;">Partner With Us <i class="fas fa-arrow-right"></i></a>
   </div>
 </div>
 
-<!-- HERO -->
+<!-- HERO SECTION WITH CINEMATIC SLIDESHOW -->
 <section class="hero" style="padding:0;">
+  <div class="hero-overlay"></div>
+  <div class="hero-slideshow">
+    <div class="hero-slide active" style="background-image:url('images/KV Banner Image.png');"></div>
+    <!-- <div class="hero-slide" style="background-image:url('images/kv_02.png');"></div>
+    <div class="hero-slide" style="background-image:url('images/3.jpg');"></div>
+    <div class="hero-slide" style="background-image:url('images/2.jpeg');"></div> -->
+  </div>
   <div class="hero-left">
+    <div class="hero-badge">KINGDOM VENTURES</div>
     <h1>
-      Building <span>Businesses.</span><br>
-      Creating <span>Value.</span><br>
-      Transforming <span>Communities.</span>
+      <span class="hero-line" data-text="Building Businesses.">Building </span><span style="color: #ea9626;">Businesses</span><br>
+      <span class="hero-line" data-text="Creating Value.">Creating </span><span style="color: #ea9626;">Value</span><br>
+      <span class="hero-line" data-text="Transforming Communities.">Transforming </span><span style="color: #ea9626;">Communities</span>
     </h1>
-    <p>Kingdom Ventures is a diversified corporate group engaged in Technology, Education, Manufacturing, Lifestyle, Infrastructure and Strategic Investments.</p>
+    <p class="hero-desc">A diversified corporate group building sustainable businesses across Technology, Education, Manufacturing, Lifestyle, Infrastructure and Strategic Investments.</p>
     <div class="hero-buttons">
-      <a href="#" class="btn-primary">Explore Our Businesses <i class="fas fa-arrow-right"></i></a>
+      <a href="pages/businesses.html" class="btn-primary">Explore Our Businesses <i class="fas fa-arrow-right"></i></a>
       <a href="#" class="btn-outline">Partner With Us <i class="fas fa-arrow-right"></i></a>
+      <a href="pages/investors.html" class="btn-outline">Investor Relations <i class="fas fa-chart-line"></i></a>
+    </div>
+    <div class="hero-strip">
+      <span><i class="fas fa-check-circle"></i> ISO Compliant</span>
+      <span><i class="fas fa-check-circle"></i> 5+ SBUs</span>
+      <span><i class="fas fa-check-circle"></i> Pan India</span>
     </div>
   </div>
-
 </section>
 
-<!-- STATS BAR -->
-<div class="stats-bar">
-  <div class="stats-inner">
-    <div class="stat-item">
-      <div class="stat-icon"><img src="images/kv_1.png" style="width: 100px;height: 100px;"></div>
-      <div>
-        <div class="stat-num">4</div>
-        <div class="stat-label">Strategic Business Units</div>
+<!-- ANIMATED STATISTICS COUNTER -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fas fa-building"></i></div>
+        <div>
+          <div class="stat-num" data-target="5">0</div>
+          <div class="stat-label">Strategic Business Units</div>
+        </div>
       </div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-icon"><img src="images/kv_2.png" style="width: 100px;height: 100px;"></div>
-      <div>
-        <div class="stat-num">2000+</div>
-        <div class="stat-label">Employees</div>
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fas fa-users"></i></div>
+        <div>
+          <div class="stat-num" data-target="250">0+</div>
+          <div class="stat-label">Employees & Growing</div>
+        </div>
       </div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-icon"><img src="images/kv_3.png" style="width: 100px;height: 100px;"></div>
-      <div>
-        <div class="stat-num">Multiple</div>
-        <div class="stat-label">Industries</div>
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fas fa-industry"></i></div>
+        <div>
+          <div class="stat-num" data-target="10">0+</div>
+          <div class="stat-label">Business Verticals</div>
+        </div>
       </div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-icon"><img src="images/kv_4.png" style="width: 100px;height: 100px;"></div>
-      <div>
-        <div class="stat-num">Pan India</div>
-        <div class="stat-label">Presence</div>
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fas fa-check-double"></i></div>
+        <div>
+          <div class="stat-num" data-target="25">0+</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
       </div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-icon"><img src="images/kv_5.png" style="width: 100px;height: 100px;"></div>
-      <div>
-        <div class="stat-num">Building For</div>
-        <div class="stat-label">Generations</div>
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fas fa-globe-asia"></i></div>
+        <div>
+          <div class="stat-num" data-target="2">0</div>
+          <div class="stat-label">Countries</div>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+        <div>
+          <div class="stat-num" data-target="2026">Est.</div>
+          <div class="stat-label">Established</div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+<!-- VISION MISSION QUALITY POLICY SECTION -->
+<section class="vision-mission-section">
+  <div class="container">
+    <div class="section-center">
+      <div class="section-divider"></div>
+      <h2 class="section-title">OUR FOUNDATION</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="vmq-grid">
+      <div class="vmq-card vision-card fade-up">
+        <div class="vmq-icon"><i class="fas fa-eye"></i></div>
+        <h3>Our Vision</h3>
+        <p>"To be a globally admired enterprise group creating sustainable value through innovation, leadership, and transformative impact."</p>
+        <div class="vmq-sub">Building Businesses. Creating Value. Transforming Communities.</div>
+      </div>
+      <div class="vmq-card mission-card fade-up fade-up-delay-1">
+        <div class="vmq-icon"><i class="fas fa-bullseye"></i></div>
+        <h3>Our Mission</h3>
+        <p>"To build, invest in, and scale businesses that drive growth, create opportunities, and enrich communities while maintaining the highest standards of governance and excellence."</p>
+        <div class="vmq-sub">Building Businesses. Creating Value. Transforming Communities.</div>
+      </div>
+      <div class="vmq-card motto-card fade-up fade-up-delay-2">
+        <div class="vmq-icon"><i class="fas fa-gem"></i></div>
+        <h3>Our Motto</h3>
+        <p style="text-align: center !important;">"Built on Vision. Driven by Excellence."</p>
+        <div class="vmq-sub">Building Businesses. Creating Value. Transforming Communities.</div>
+      </div>
+   
+    </div>
+   <div style="margin-top:32px;    display: flex;
+    align-items: center;
+    justify-content: center;">
+        <a href="pages/about.html" class="btn-journey" style="color:var(--navy);border-color:var(--navy);">Read Full Vision & Mission <i class="fas fa-arrow-right"></i></a>
+      </div>
+    <!-- Quality Policy -->
+    <div class="quality-policy fade-up">
+      <div class="quality-badge">QUALITY POLICY</div>
+      <div class="quality-content">
+        <div class="quality-icon"><i class="fas fa-medal"></i></div>
+        <div>
+          <h3>Commitment to Excellence</h3>
+          <p>"At Kingdom Ventures, quality is not merely a standard—it is a commitment. We are dedicated to achieving excellence in every endeavor through innovation, operational discipline, customer focus, and continuous improvement. Our goal is to create sustainable value for all stakeholders while maintaining the highest levels of integrity, governance, and professional excellence."</p>
+          <div class="quality-tags">
+            <span><i class="fas fa-check"></i> ISO Compliant Processes</span>
+            <span><i class="fas fa-check"></i> Continuous Improvement</span>
+            <span><i class="fas fa-check"></i> Stakeholder Focus</span>
+            <span><i class="fas fa-check"></i> Risk-Based Thinking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE BUSINESS ECOSYSTEM -->
+<section class="ecosystem-section">
+  <div class="container">
+    <div class="section-center">
+      <div class="section-divider"></div>
+      <h2 class="section-title">OUR BUSINESS ECOSYSTEM</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="ecosystem">
+      <div class="eco-center">
+        <!-- <img src="images/Crown.png" alt="Kingdom Ventures">
+        <h3>Kingdom Ventures</h3> -->
+      </div>
+      <div class="eco-nodes">
+        <div class="eco-node eco-node-1" data-info="Technology & Networking Solutions | Elshaddai Network Solutions">
+          <div class="eco-icon"><i class="fas fa-network-wired"></i></div>
+          <span>Network Solutions</span>
+          <div class="eco-tooltip">
+            <h4>Elshaddai Network Solutions</h4>
+            <p>Technology Division delivering networking, infrastructure, cloud and IT consulting services.</p>
+          </div>
+        </div>
+        <div class="eco-node eco-node-2" data-info="Custom Software & AI Solutions | Ascending Software">
+          <div class="eco-icon"><i class="fas fa-code"></i></div>
+          <span>Software</span>
+          <div class="eco-tooltip">
+            <h4>Ascending Software</h4>
+            <p>Software development, AI solutions, SaaS and digital transformation services.</p>
+          </div>
+        </div>
+        <div class="eco-node eco-node-3" data-info="Education & Skill Development | Emetria Academy">
+          <div class="eco-icon"><i class="fas fa-graduation-cap"></i></div>
+          <span>Education</span>
+          <div class="eco-tooltip">
+            <h4>Emetria Academy</h4>
+            <p>Higher education, professional training, international certifications and skill development.</p>
+          </div>
+        </div>
+        <div class="eco-node eco-node-4" data-info="Luxury Manufacturing & Lifestyle | Throne Recliners">
+          <div class="eco-icon"><i class="fas fa-couch"></i></div>
+          <span>Manufacturing</span>
+          <div class="eco-tooltip">
+            <h4>Throne Recliners</h4>
+            <p>Luxury recliners, home theatre seating and premium lifestyle furniture manufacturing.</p>
+          </div>
+        </div>
+        <div class="eco-node eco-node-5" data-info="IT Solutions & Digital Services | IT Solutions Division">
+          <div class="eco-icon"><i class="fas fa-laptop-code"></i></div>
+          <span>IT Solutions</span>
+          <div class="eco-tooltip">
+            <h4>IT Solutions Division</h4>
+            <p>Enterprise IT solutions, digital transformation, cloud services and technology consulting.</p>
+          </div>
+        </div>
+        <div class="eco-node eco-node-6" data-info="Strategic Investments & Advisory | Investments Division">
+          <div class="eco-icon"><i class="fas fa-chart-pie"></i></div>
+          <span>Investments</span>
+          <div class="eco-tooltip">
+            <h4>Strategic Investments</h4>
+            <p>Venture capital, strategic investments, M&A advisory and business incubation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORPORATE VIDEO + CHAIRMAN'S MESSAGE -->
+<section class="chairman-section">
+  <div class="container">
+    <div class="chairman-grid">
+      <div class="chairman-video fade-up">
+        <div class="video-thumb">
+          <img src="images/Tall building left.png" alt="Kingdom Ventures Corporate Film">
+          <div class="play-btn-large"><i class="fas fa-play"></i></div>
+          <!-- <div class="video-duration">▶ Watch Corporate Film · 90 sec</div> -->
+        </div>
+      </div>
+      <div class="chairman-message fade-up fade-up-delay-1">
+        <div class="section-label">CHAIRMAN'S MESSAGE</div>
+        <h2>Building a Legacy of Excellence</h2>
+        <p>"At Kingdom Ventures, we believe in creating lasting value—not just for today, but for generations to come. Our journey is driven by a vision to build enterprises that stand for integrity, innovation, and impact. Every business we nurture, every partnership we forge, and every community we serve is a step toward a brighter, more prosperous future."</p>
+        <div class="chairman-sign">
+          <div class="chairman-photo-sm" style="background-image:url('images/6.png');"></div>
+          <div>
+            <div class="chairman-name">S. Rajendran</div>
+            <div class="chairman-title">Group Chairman</div>
+          </div>
+        </div>
+        <a href="pages/about.html" class="btn-primary" style="display:inline-flex;background:var(--navy);">Read Full Message <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND VALUES ANIMATION -->
+<section class="values-section">
+  <div class="container">
+    <div class="section-center">
+      <div class="section-divider"></div>
+      <h2 class="section-title">OUR CORE VALUES</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="values-animation">
+      <div class="value-item fade-up">
+        <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+        <h4>Integrity</h4>
+        <div class="value-bar"></div>
+      </div>
+      <div class="value-item fade-up fade-up-delay-1">
+        <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+        <h4>Innovation</h4>
+        <div class="value-bar"></div>
+      </div>
+      <div class="value-item fade-up fade-up-delay-2">
+        <div class="value-icon"><i class="fas fa-trophy"></i></div>
+        <h4>Excellence</h4>
+        <div class="value-bar"></div>
+      </div>
+      <div class="value-item fade-up fade-up-delay-3">
+        <div class="value-icon"><i class="fas fa-crown"></i></div>
+        <h4>Leadership</h4>
+        <div class="value-bar"></div>
+      </div>
+      <div class="value-item fade-up fade-up-delay-4">
+        <div class="value-icon"><i class="fas fa-hands-helping"></i></div>
+        <h4>Stewardship</h4>
+        <div class="value-bar"></div>
+      </div>
+      <div class="value-item fade-up fade-up-delay-5">
+        <div class="value-icon"><i class="fas fa-seedling"></i></div>
+        <h4>Impact</h4>
+        <div class="value-bar"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- WHO WE ARE -->
 <section>
   <div class="container">
     <div class="who-grid">
       <div class="who-img-wrap fade-up">
-        <img src="images/2.jpg" alt="Kingdom Ventures HQ">
+        <img src="images/2.jpeg" alt="Kingdom Ventures HQ">
         <div class="play-btn"><i class="fas fa-play"></i></div>
       </div>
       <div class="who-mid fade-up fade-up-delay-1">
         <div class="section-label">WHO WE ARE</div>
         <h2>Kingdom Ventures</h2>
-        <p>A diversified corporate enterprise focused on building sustainable businesses that create economic, social and technological impact.</p>
-        <a href="#" class="btn-primary" style="display:inline-flex;background: #021A3E;">Know More About Us <i class="fas fa-arrow-right"></i></a>
+        <p>A diversified corporate enterprise focused on building sustainable businesses that create economic, social and technological impact across multiple sectors including Technology, Education, Manufacturing, and Investments.</p>
+        <div class="who-stats-mini">
+          <div><strong>Est.</strong> 2026</div>
+          <div><strong>5+</strong> SBUs</div>
+          <div><strong>10+</strong> Verticals</div>
+        </div>
+        <a href="pages/about.html" class="btn-primary" style="display:inline-flex;background:var(--navy);">Know More About Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="fade-up fade-up-delay-2">
         <div class="mvv-item">
@@ -164,7 +382,7 @@
           <div class="mvv-icon"><i class="fas fa-gem"></i></div>
           <div>
             <h4>Our Core Values</h4>
-            <p class="values-list">Integrity · Innovation · Excellence · Kingdom Stewardship · Leadership</p>
+            <p class="values-list">Integrity · Innovation · Excellence · Kingdom Stewardship · Leadership · Impact</p>
           </div>
         </div>
       </div>
@@ -178,8 +396,9 @@
     <div class="section-center">
       <div class="section-divider"></div>
       <h2 class="section-title">OUR BUSINESSES</h2>
-         <div class="section-divider"></div>
+      <div class="section-divider"></div>
     </div>
+    <p class="section-desc">Explore our diverse portfolio of strategic business units delivering excellence across multiple industries.</p>
     <div class="biz-grid" style="margin-top:48px;">
       <div class="biz-card blue fade-up">
         <div class="biz-img" style="background-image:url('images/3.jpg');">
@@ -246,6 +465,52 @@
         </div>
       </div>
     </div>
+    <div class="biz-cta">
+      <a href="pages/businesses.html" class="btn-journey" style="color:var(--navy);border-color:var(--navy);">View All Businesses <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY KINGDOM VENTURES -->
+<section style="padding:60px 0;background:var(--white);">
+  <div class="container">
+    <div class="section-center">
+      <div class="section-divider"></div>
+      <h2 class="section-title">WHY KINGDOM VENTURES</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="why-premium-grid">
+      <div class="why-premium-card fade-up">
+        <div class="why-premium-icon"><i class="fas fa-building"></i></div>
+        <h4>Corporate Governance</h4>
+        <p>Ethical practices, transparent operations and board-level oversight ensuring accountability at every level.</p>
+      </div>
+      <div class="why-premium-card fade-up fade-up-delay-1">
+        <div class="why-premium-icon"><i class="fas fa-lightbulb"></i></div>
+        <h4>Innovation</h4>
+        <p>Driving technological advancement and creative solutions across all business verticals.</p>
+      </div>
+      <div class="why-premium-card fade-up fade-up-delay-2">
+        <div class="why-premium-icon"><i class="fas fa-shield-alt"></i></div>
+        <h4>Integrity</h4>
+        <p>Unwavering commitment to ethical business practices and stakeholder trust.</p>
+      </div>
+      <div class="why-premium-card fade-up fade-up-delay-3">
+        <div class="why-premium-icon"><i class="fas fa-sitemap"></i></div>
+        <h4>Diversification</h4>
+        <p>Strategic presence across multiple industries reducing risk and maximizing growth opportunities.</p>
+      </div>
+      <div class="why-premium-card fade-up fade-up-delay-4">
+        <div class="why-premium-icon"><i class="fas fa-leaf"></i></div>
+        <h4>Sustainability</h4>
+        <p>Integrating environmental and social responsibility into our business decisions.</p>
+      </div>
+      <div class="why-premium-card fade-up fade-up-delay-5">
+        <div class="why-premium-icon"><i class="fas fa-chart-line"></i></div>
+        <h4>Long-term Growth</h4>
+        <p>Building sustainable enterprises focused on creating value across generations.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -263,25 +528,22 @@
           <div class="corp-node">Chief Executive Officer</div>
           <div class="corp-connector"></div>
           <div class="corp-row">
-            <div class="corp-node highlight" style="width:140px;font-size:11px;background: #245422;color: white;">Chief Operating Officer</div>
-            <div class="corp-node highlight" style="width:140px;font-size:11px;    background: #A03107;
-    color: white;">Chief Financial Officer</div>
+            <div class="corp-node highlight" style="width:140px;font-size:11px;background:#245422;color:white;">Chief Operating Officer</div>
+            <div class="corp-node highlight" style="width:140px;font-size:11px;background:#A03107;color:white;">Chief Financial Officer</div>
           </div>
           <div class="corp-connector"></div>
           <div class="corp-node dark">Corporate Shared Services</div>
           <div class="corp-connector"></div>
           <div class="corp-node dark">Strategic Business Units</div>
           <div class="corp-connector"></div>
-          <div class="corp-node" style="background: #FDFDFE;
-    color: #0F1A2C;
-    border: 1px solid #0F1A2C;">Four Companies</div>
+          <div class="corp-node" style="background:#f0f5fb;color:var(--navy);border:1px solid var(--navy);">Five Group Companies</div>
         </div>
         <button class="btn-gov">View Corporate Governance <i class="fas fa-arrow-right"></i></button>
       </div>
       <div class="leadership-box fade-up fade-up-delay-1">
         <div class="leadership-header">
           <h3>Our Leadership</h3>
-          <a href="#" class="view-all">View All Leaders <i class="fas fa-arrow-right"></i></a>
+          <a href="pages/leadership.html" class="view-all">View All Leaders <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="leaders-carousel">
           <div class="leaders-row" id="leadersTrack">
@@ -310,8 +572,8 @@
               <div class="leader-desc">Finance. Control.<br>Growth.</div>
             </div>
             <div class="leader-card">
-              <div class="leader-photo" style="background:#a4a4a41f; display:flex; align-items:center; justify-content:center;">
-              <img src="images/4_Image.png" style="width: 190px;">
+              <div class="leader-photo" style="background:#dde8f5;display:flex;align-items:center;justify-content:center;">
+                <img src="images/4_Image.png" style="width:190px;" alt="Board of Directors">
               </div>
               <div class="leader-title">Board of Directors</div>
               <div class="leader-name">Council</div>
@@ -329,42 +591,47 @@
   </div>
 </section>
 
-<!-- WHY US -->
-<section style="padding:60px 0; background:var(--white);">
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
   <div class="container">
-    <div class="why-grid">
-      <div class="why-card fade-up">
-        <div class="why-icon">
-          <img src="images/kv_01.png" style="width:100px;height: 70px;">
+    <div class="section-center">
+      <div class="section-divider"></div>
+      <h2 class="section-title">WHAT OUR PARTNERS SAY</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"Kingdom Ventures has been a reliable technology partner. Their commitment to quality and innovation is exemplary."</p>
+        <div class="testimonial-author">
+          <div class="test-auth-avatar" style="background:#1a4fa0;">V</div>
+          <div>
+            <div class="test-auth-name">Dr. Vijayakumar</div>
+            <div class="test-auth-title">University Partner</div>
+          </div>
         </div>
-        <h4>Diversified Business Group</h4>
-        <p>Multiple industries. One strong vision.</p>
       </div>
-      <div class="why-card fade-up fade-up-delay-1">
-        <div class="why-icon"><img src="images/kv_02.png" style="width:100px;height: 100px;"></div>
-        <h4>Experienced Leadership</h4>
-        <p>Seasoned leaders driving sustainable growth.</p>
-      </div>
-      <div class="why-card fade-up fade-up-delay-2">
-        <div class="why-icon"><img src="images/kv_03.png" style="width:100px;height: 100px;"></div>
-        <h4>Strong Corporate Governance</h4>
-        <p>Ethical practices. Transparent operations.</p>
-      </div>
-      <div class="why-card fade-up fade-up-delay-3">
-        <div class="why-icon"><img src="images/kv_04.png" style="width:100px;height: 100px;"></div>
-        <h4>Long-term Partnerships</h4>
-        <p>Building lasting relationships for greater impact.</p>
-      </div>
-      <div class="news-highlight fade-up fade-up-delay-4">
-        <div style="display:flex;align-items:center;gap:20px;">
-      <div>
-            <div class="news-hl-label">Latest Update</div>
-          <div class="news-hl-title">Kingdom Ventures Announces Strategic Partnership in Technology Solutions</div>
-          <div class="news-hl-date">May 15, 2026</div>
-      </div>
-          <div class="news-hl-img"></div>
+      <div class="testimonial-card fade-up fade-up-delay-1">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"Working with Throne Recliners has transformed our home theatre business. Exceptional product quality and service."</p>
+        <div class="testimonial-author">
+          <div class="test-auth-avatar" style="background:#e07b39;">M</div>
+          <div>
+            <div class="test-auth-name">M. Rafiq</div>
+            <div class="test-auth-title">Technology Partner</div>
+          </div>
         </div>
-        <button class="btn-read">Read More <i class="fas fa-arrow-right"></i></button>
+      </div>
+      <div class="testimonial-card fade-up fade-up-delay-2">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"Emetria Academy's professional training programs have upskilled our workforce significantly. Highly recommended."</p>
+        <div class="testimonial-author">
+          <div class="test-auth-avatar" style="background:#2e7d4f;">S</div>
+          <div>
+            <div class="test-auth-name">S. Lakshmi</div>
+            <div class="test-auth-title">Industry Client</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -374,88 +641,161 @@
 <section class="journey">
   <div class="container">
     <div class="section-center">
-      <!-- <div class="section-divider"></div> -->
       <h2 class="section-title">OUR GROWTH JOURNEY</h2>
     </div>
     <div class="timeline">
       <div class="tl-item fade-up">
-        <div class="tl-dot"><i class="fas fa-star" style="    font-size: 17px;
-    color: #f6c073;"></i></div>
+        <div class="tl-dot"><i class="fas fa-star" style="font-size:17px;color:white;"></i></div>
         <div class="tl-year">2026</div>
         <div class="tl-label">Kingdom Ventures<br>Established</div>
       </div>
       <div class="tl-item fade-up fade-up-delay-1">
-        <div class="tl-dot"><i class="fas fa-microchip" style="    font-size: 17px;
-    color: #f6c073;"></i></div>
+        <div class="tl-dot"><i class="fas fa-microchip" style="font-size:17px;color:white;"></i></div>
         <div class="tl-year">2027</div>
         <div class="tl-label">Technology Division<br>Expansion</div>
       </div>
       <div class="tl-item fade-up fade-up-delay-2">
-        <div class="tl-dot"><i class="fas fa-book" style="    font-size: 17px;
-    color: #f6c073;"></i></div>
+        <div class="tl-dot"><i class="fas fa-book" style="font-size:17px;color:white;"></i></div>
         <div class="tl-year">2028</div>
         <div class="tl-label">Education Division<br>Growth</div>
       </div>
       <div class="tl-item fade-up fade-up-delay-3">
-        <div class="tl-dot"><i class="fas fa-industry" style="    font-size: 17px;
-    color: #f6c073;"></i></div>
+        <div class="tl-dot"><i class="fas fa-industry" style="font-size:17px;color:white;"></i></div>
         <div class="tl-year">2029</div>
         <div class="tl-label">Manufacturing<br>Expansion</div>
       </div>
       <div class="tl-item fade-up fade-up-delay-4">
-        <div class="tl-dot"><i class="fas fa-globe" style="    font-size: 17px;
-    color: #f6c073;"></i></div>
+        <div class="tl-dot"><i class="fas fa-globe" style="font-size:17px;color:white;"></i></div>
         <div class="tl-year">2030</div>
         <div class="tl-label">International<br>Operations</div>
       </div>
     </div>
     <div class="journey-cta">
-      <a href="#" class="btn-journey">View Our Journey <i class="fas fa-arrow-right"></i></a>
+      <a href="pages/about.html" class="btn-journey">View Our Journey <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
 </section>
 
-<!-- INVESTORS & PARTNERS -->
-<section>
+<!-- CSR / ESG SECTION -->
+<section class="csr-section">
   <div class="container">
-    <div class="investors-grid">
-      <div class="inv-left fade-up">
-        <div class="section-label">INVESTORS & PARTNERS</div>
-        <h3>Build the Future<br>Together</h3>
-        <p>We collaborate with investors, institutions and strategic partners to build future-ready businesses with shared goals and long-term vision.</p>
-        <a href="#" class="btn-become">Become a Partner <i class="fas fa-arrow-right"></i></a>
+    <div class="section-center">
+      <div class="section-divider"></div>
+      <h2 class="section-title">SUSTAINABILITY & CSR</h2>
+      <div class="section-divider"></div>
+    </div>
+    <p class="section-desc">Committed to creating positive social and environmental impact through responsible business practices.</p>
+    <div class="csr-grid">
+      <div class="csr-card fade-up">
+        <div class="csr-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h4>Education</h4>
+        <p>Empowering youth through scholarships, skill development and educational infrastructure.</p>
       </div>
-      <div class="inv-mid fade-up fade-up-delay-1">
-        <div class="inv-features">
-          <div class="inv-feat">
-            <div class="inv-feat-icon" style="    width: 70px;
-    height: 70px;"><img src="images/Settings.png" style="width:100%;"></div>
-            <div class="inv-feat-name">Financial <br> Strength</div>
-          </div>
-          <div class="inv-feat">
-  <div class="inv-feat-icon" style="     width: 104px;
-    height: 74px;"><img src="images/KV-_Graph.png" style="    width: 104px;"></div>
-            <div class="inv-feat-name">Sustainable <br> Growth</div>
-          </div>
-          <div class="inv-feat">
-           <div class="inv-feat-icon" style="     width: 104px;
-    height: 74px;"><img src="images/KV_people.png" style="    width: 104px;"></div>
-            <div class="inv-feat-name">Strong <br> Governance</div>
-          </div>
-          <div class="inv-feat" style="border-right: none; padding-right: 0;">
-           <div class="inv-feat-icon" style="    width: 104px;
-    height: 74px;"><img src="images/Kv_Goal.png" style="    width: 104px;"></div>
-            <div class="inv-feat-name">Future <br> Focused</div>
-          </div>
+      <div class="csr-card fade-up fade-up-delay-1">
+        <div class="csr-icon"><i class="fas fa-heartbeat"></i></div>
+        <h4>Healthcare</h4>
+        <p>Supporting community health initiatives and access to quality medical care.</p>
+      </div>
+      <div class="csr-card fade-up fade-up-delay-2">
+        <div class="csr-icon"><i class="fas fa-paw"></i></div>
+        <h4>Animal Welfare</h4>
+        <p>Dedicated to the protection and wellbeing of animals in our communities.</p>
+      </div>
+      <div class="csr-card fade-up fade-up-delay-3">
+        <div class="csr-icon"><i class="fas fa-seedling"></i></div>
+        <h4>Environment</h4>
+        <p>Green initiatives, sustainable practices and environmental conservation efforts.</p>
+      </div>
+      <div class="csr-card fade-up fade-up-delay-4">
+        <div class="csr-icon"><i class="fas fa-users"></i></div>
+        <h4>Community</h4>
+        <p>Building resilient communities through infrastructure and social development.</p>
+      </div>
+      <div class="csr-card fade-up fade-up-delay-5">
+        <div class="csr-icon"><i class="fas fa-hand-holding-heart"></i></div>
+        <h4>Skill Development</h4>
+        <p>Creating livelihood opportunities through vocational training and capacity building.</p>
+      </div>
+    </div>
+    <div class="csr-cta">
+      <a href="pages/csr.html" class="btn-journey" style="color:var(--navy);border-color:var(--navy);">View Our CSR Initiatives <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS & CERTIFICATIONS -->
+<section class="awards-section">
+  <div class="container">
+    <div class="section-center">
+      <div class="section-divider"></div>
+      <h2 class="section-title">AWARDS & CERTIFICATIONS</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="awards-scroll">
+      <div class="awards-track">
+        <div class="award-item"><i class="fas fa-certificate"></i><span>ISO 9001</span></div>
+        <div class="award-item"><i class="fas fa-award"></i><span>MSME</span></div>
+        <div class="award-item"><i class="fas fa-rocket"></i><span>Startup India</span></div>
+        <div class="award-item"><i class="fas fa-tools"></i><span>Skill India</span></div>
+        <div class="award-item"><i class="fas fa-code"></i><span>NASSCOM</span></div>
+        <div class="award-item"><i class="fas fa-university"></i><span>AICTE</span></div>
+        <div class="award-item"><i class="fas fa-handshake"></i><span>Industry Partners</span></div>
+        <div class="award-item"><i class="fas fa-globe"></i><span>Global Certified</span></div>
+        <!-- Duplicate for seamless loop -->
+        <div class="award-item"><i class="fas fa-certificate"></i><span>ISO 9001</span></div>
+        <div class="award-item"><i class="fas fa-award"></i><span>MSME</span></div>
+        <div class="award-item"><i class="fas fa-rocket"></i><span>Startup India</span></div>
+        <div class="award-item"><i class="fas fa-tools"></i><span>Skill India</span></div>
+        <div class="award-item"><i class="fas fa-code"></i><span>NASSCOM</span></div>
+        <div class="award-item"><i class="fas fa-university"></i><span>AICTE</span></div>
+        <div class="award-item"><i class="fas fa-handshake"></i><span>Industry Partners</span></div>
+        <div class="award-item"><i class="fas fa-globe"></i><span>Global Certified</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER WITH US -->
+<section class="partner-section">
+  <div class="container">
+    <div class="partner-grid">
+      <div class="partner-left fade-up">
+        <div class="section-label">PARTNER WITH US</div>
+        <h2>Collaborate for<br>Impactful Growth</h2>
+        <p>We welcome partnerships with academic institutions, investors, technology providers, government agencies, and industry leaders who share our vision of building a better future.</p>
+        <div class="partner-types">
+          <span class="partner-tag"><i class="fas fa-university"></i> Academic</span>
+          <span class="partner-tag"><i class="fas fa-chart-line"></i> Investors</span>
+          <span class="partner-tag"><i class="fas fa-microchip"></i> Technology</span>
+          <span class="partner-tag"><i class="fas fa-building"></i> Government</span>
+          <span class="partner-tag"><i class="fas fa-industry"></i> Industry</span>
+          <span class="partner-tag"><i class="fas fa-handshake"></i> Franchise</span>
         </div>
+        <a href="#" class="btn-primary" style="display:inline-flex;">Become a Partner <i class="fas fa-arrow-right"></i></a>
       </div>
-      <div class="inv-right fade-up fade-up-delay-2">
-        <div class="section-label">STAY CONNECTED</div>
-        <h3>Latest Updates</h3>
-        <p>Subscribe to our newsletter for the latest updates and announcements from Kingdom Ventures.</p>
-        <div class="newsletter">
-          <input type="email" placeholder="Enter your email">
-          <button><i class="fas fa-arrow-right"></i></button>
+      <div class="partner-right fade-up fade-up-delay-1">
+        <div class="partner-form">
+          <h3>Send Enquiry</h3>
+          <form id="partnerForm">
+            <div class="form-row">
+              <input type="text" placeholder="Full Name" required>
+              <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-row">
+              <input type="tel" placeholder="Phone Number">
+              <select>
+                <option>Partner Type</option>
+                <option>Academic Institution</option>
+                <option>Investor</option>
+                <option>Technology Partner</option>
+                <option>Government</option>
+                <option>Industry</option>
+                <option>Franchise</option>
+              </select>
+            </div>
+            <textarea rows="3" placeholder="Brief Message"></textarea>
+            <button type="submit" class="btn-primary" style="border:none;cursor:pointer;width:100%;justify-content:center;">Submit Enquiry <i class="fas fa-arrow-right"></i></button>
+          </form>
         </div>
       </div>
     </div>
@@ -467,12 +807,10 @@
   <div class="container">
     <div class="news-cols">
       <!-- Latest News -->
-      <div class="fade-up" style="    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 15px;
-    border-radius: 9px;background:white">
+      <div class="fade-up" style="box-shadow:rgba(10,22,40,0.12) 0px 2px 8px 0px;padding:15px;border-radius:9px;background:white;">
         <div class="news-col-top">
           <h3 class="news-col">Latest News</h3>
-          <a href="#" class="view-all-link">View All News <i class="fas fa-arrow-right"></i></a>
+          <a href="pages/media.html" class="view-all-link">View All News <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="news-item">
           <div class="news-thumb" style="background-image:url('images/Tall building left.png');"></div>
@@ -498,17 +836,14 @@
       </div>
 
       <!-- Careers -->
-      <div class="fade-up fade-up-delay-1" style="    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 15px;
-    border-radius: 9px;background:white">
+      <div class="fade-up fade-up-delay-1" style="box-shadow:rgba(10,22,40,0.12) 0px 2px 8px 0px;padding:15px;border-radius:9px;background:white;">
         <div class="news-col-top">
           <h3 class="news-col">Careers</h3>
-          <a href="#" class="view-all-link">View Openings <i class="fas fa-arrow-right"></i></a>
+          <a href="pages/careers.html" class="view-all-link">View Openings <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="careers-box">
           <div class="careers-photo"></div>
           <h4>Join Kingdom Ventures and be a part of a purpose-driven team building India's future through enterprise excellence.</h4>
-          <!-- <p>Great culture · Growth opportunities · Meaningful impact</p> -->
           <div class="careers-tags">
             <span class="tag"><i class="fas fa-check"></i> Great Culture</span>
             <span class="tag"><i class="fas fa-chart-line"></i> Growth Opportunities</span>
@@ -518,24 +853,38 @@
       </div>
 
       <!-- Corporate Office -->
-      <div class="fade-up fade-up-delay-2" style="    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 15px;
-    border-radius: 9px;background:white">
+      <div class="fade-up fade-up-delay-2" style="box-shadow:rgba(10,22,40,0.12) 0px 2px 8px 0px;padding:15px;border-radius:9px;background:white;">
         <div class="news-col-top">
           <h3 class="news-col">Corporate Office</h3>
         </div>
-        <div class="office-card" style="display: flex;
-    ">
-       <div>
-           <div class="office-info"><i class="fas fa-map-marker-alt"></i><span>Kingdom Ventures Corporate Office, 12/4, Kingdom Tower, Business District, Bengaluru – 560001, India</span></div>
-          <div class="office-info"><i class="fas fa-phone"></i><span>+91 80 1234 5678</span></div>
-          <div class="office-info"><i class="fas fa-envelope"></i><span>info@kingdomventures.in</span></div>
-                    <button class="btn-directions">Get Directions <i class="fas fa-arrow-right"></i></button>
-
-       </div>
+        <div class="office-card" style="display:flex;">
+          <div>
+            <div class="office-info"><i class="fas fa-map-marker-alt"></i><span>Kingdom Ventures Corporate Office, 12/4, Kingdom Tower, Business District, Bengaluru – 560001, India</span></div>
+            <div class="office-info"><i class="fas fa-phone"></i><span>+91 80 1234 5678</span></div>
+            <div class="office-info"><i class="fas fa-envelope"></i><span>info@kingdomventures.in</span></div>
+            <button class="btn-directions">Get Directions <i class="fas fa-arrow-right"></i></button>
+          </div>
           <div class="office-img"></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-banner">
+      <div>
+        <h3>Stay Updated with Kingdom Ventures</h3>
+        <p>Receive the latest corporate news, investment updates, and event invitations directly in your inbox.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <div class="newsletter-input-group">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
@@ -547,16 +896,20 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="logo">
-             <div class="logo-icon" style="width: 80px;
-    height: 41px;">
-        <img src="images/Crown.png" style="width: 100%;">
-      </div>
-            <div class="logo-text">
-              <span class="name">KINGDOM</span>
-              <span class="sub">VENTURES</span>
+            <div class="logo-icon" style="width:80px;height:41px;">
+              <img src="images/Crown.png" style="width:100%;" alt="Kingdom Ventures">
             </div>
+            <div class="logo-text">
+        <span class="name">KINGDOM</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div class="section-divider" style="width:10px;height:1px;"></div>
+          <span class="sub">VENTURES</span>
+          <div class="section-divider" style="width:10px;height:1px;"></div>
+        </div>
+      </div>
           </div>
-          <div class="footer-tagline">Building Value. Creating Impact.</div>
+          <div class="footer-tagline">Built on Vision. Driven by Excellence.</div>
+          <div class="footer-desc">A diversified corporate group building sustainable businesses across Technology, Education, Manufacturing, Lifestyle, Infrastructure and Strategic Investments.</div>
           <div class="footer-socials">
             <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
             <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
@@ -567,27 +920,29 @@
         <div class="footer-col">
           <h5>Company</h5>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Investments</a></li>
-            <li><a href="#">Media</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/investors.html">Investors</a></li>
+            <li><a href="pages/media.html">Media</a></li>
+            <li><a href="pages/csr.html">CSR & Impact</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h5>Businesses</h5>
           <ul>
-            <li><a href="#">Elshaddai Network Solutions</a></li>
-            <li><a href="#">Throne Recliners</a></li>
-            <li><a href="#">Ascending Software</a></li>
-            <li><a href="#">Emetria Academy</a></li>
+            <li><a href="pages/businesses.html">Elshaddai Network Solutions</a></li>
+            <li><a href="pages/businesses.html">Throne Recliners</a></li>
+            <li><a href="pages/businesses.html">Ascending Software</a></li>
+            <li><a href="pages/businesses.html">Emetria Academy</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h5>Leadership</h5>
+          <h5>Quick Links</h5>
           <ul>
-            <li><a href="#">Board of Directors</a></li>
-            <li><a href="#">Leadership Team</a></li>
+            <li><a href="pages/careers.html">Careers</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
             <li><a href="#">Corporate Governance</a></li>
+            <li><a href="#">Download Brochure</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -595,6 +950,7 @@
           <ul>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
             <li><a href="#">Compliance</a></li>
           </ul>
         </div>
@@ -604,198 +960,57 @@
   <div class="footer-bottom">
     <div class="container">
       <div class="footer-bottom-inner">
-        <span>© 2026 Kingdom Ventures. All Rights Reserved.</span>
+        <span>© 2026 Kingdom Ventures. All Rights Reserved. | "Built on Vision. Driven by Excellence."</span>
+        <div class="footer-bottom-links">
+          <a href="#">Sitemap</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
       </div>
     </div>
   </div>
 </footer>
 
-<script>
-  // Intersection Observer for fade-up animations
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+<!-- AI CHAT ASSISTANT -->
+<div class="ai-chat-btn" id="aiChatBtn">
+  <i class="fas fa-robot"></i>
+</div>
+<div class="ai-chat-window" id="aiChatWindow">
+  <div class="chat-header">
+    <span><i class="fas fa-robot"></i> KV Assistant</span>
+    <button id="chatClose"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <div class="chat-msg bot">
+      <div class="msg-content">Welcome to Kingdom Ventures! How can I help you today?<br><br>
+        <span class="chat-quick" data-q="Tell me about Emetria Academy">📚 Emetria Academy</span>
+        <span class="chat-quick" data-q="Show Throne Recliners">🛋️ Throne Recliners</span>
+        <span class="chat-quick" data-q="Career Opportunities">💼 Careers</span>
+        <span class="chat-quick" data-q="Contact Information">📞 Contact</span>
+      </div>
+    </div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="Type your question...">
+    <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
 
-  document.querySelectorAll('.fade-up, .stat-item').forEach(el => observer.observe(el));
+<!-- FLOATING QUICK ACCESS BAR -->
+<div class="floating-bar">
+  <a href="tel:+918012345678" class="fb-item" title="Call Us"><i class="fas fa-phone"></i></a>
+  <a href="mailto:info@kingdomventures.in" class="fb-item" title="Email"><i class="fas fa-envelope"></i></a>
+  <a href="#" class="fb-item" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="#" class="fb-item" title="Download Brochure"><i class="fas fa-file-pdf"></i></a>
+  <a href="pages/contact.html" class="fb-item" title="Locate Us"><i class="fas fa-map-marker-alt"></i></a>
+</div>
 
-  // Smooth counter animation for stats
-  function animateCount(el, target, suffix = '') {
-    let start = 0;
-    const duration = 1500;
-    const step = Math.ceil(target / (duration / 16));
-    const interval = setInterval(() => {
-      start = Math.min(start + step, target);
-      el.textContent = start + suffix;
-      if (start >= target) clearInterval(interval);
-    }, 16);
-  }
+<!-- SCROLL TO TOP -->
+<button id="scrollToTop" class="scroll-to-top" title="Back to Top">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
-  // Hero headline stagger animation
-  document.querySelectorAll('.hero-left h1').forEach(h => {
-    h.style.opacity = '0';
-    h.style.transform = 'translateY(30px)';
-    h.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-    setTimeout(() => {
-      h.style.opacity = '1';
-      h.style.transform = 'translateY(0)';
-    }, 200);
-  });
-
-  document.querySelectorAll('.hero-left p, .hero-buttons').forEach((el, i) => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    setTimeout(() => {
-      el.style.opacity = '1';
-      el.style.transform = 'translateY(0)';
-    }, 600 + i * 200);
-  });
-
-  // Sticky header shadow enhancement on scroll
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if (window.scrollY > 10) {
-      header.style.boxShadow = '0 4px 24px rgba(0,0,0,0.12)';
-    } else {
-      header.style.boxShadow = '0 2px 16px rgba(0,0,0,0.08)';
-    }
-  });
-
-  // ═══ MOBILE SIDEBAR TOGGLE ═══
-  (function() {
-    const hamburger = document.getElementById('hamburger');
-    const sidebar = document.getElementById('mobileSidebar');
-    const overlay = document.getElementById('mobileOverlay');
-    const closeBtn = document.getElementById('mobileClose');
-
-    function openSidebar() {
-      sidebar.classList.add('open');
-      overlay.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeSidebar() {
-      sidebar.classList.remove('open');
-      overlay.classList.remove('open');
-      document.body.style.overflow = '';
-    }
-
-    if (hamburger) hamburger.addEventListener('click', openSidebar);
-    if (closeBtn) closeBtn.addEventListener('click', closeSidebar);
-    if (overlay) overlay.addEventListener('click', closeSidebar);
-
-    // Close on link click inside sidebar
-    if (sidebar) {
-      sidebar.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', closeSidebar);
-      });
-    }
-
-    // Close sidebar when resizing to desktop
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 768) {
-        closeSidebar();
-      }
-    });
-  })();
-
-  // ═══ LEADERSHIP CAROUSEL SLIDER ═══
-  (function() {
-    const track = document.getElementById('leadersTrack');
-    const dots = document.querySelectorAll('#leadersDots .dot');
-    if (!track || !dots.length) return;
-
-    let currentSlide = 0;
-    let cards = track.querySelectorAll('.leader-card');
-    let cardsPerSlide = 3;
-    let autoPlayInterval;
-
-    function getCardsPerSlide() {
-      if (window.innerWidth < 768) return 1;
-      if (window.innerWidth < 1024) return 2;
-      return 3;
-    }
-
-    function updateSlide() {
-      cardsPerSlide = getCardsPerSlide();
-      const totalSlides = Math.ceil(cards.length / cardsPerSlide);
-      
-      // Adjust dots count
-      const dotsContainer = document.getElementById('leadersDots');
-      while (dotsContainer.children.length < totalSlides) {
-        const newDot = document.createElement('span');
-        newDot.className = 'dot';
-        newDot.dataset.slide = dotsContainer.children.length;
-        newDot.addEventListener('click', () => goToSlide(parseInt(newDot.dataset.slide)));
-        dotsContainer.appendChild(newDot);
-      }
-      while (dotsContainer.children.length > totalSlides) {
-        dotsContainer.removeChild(dotsContainer.lastChild);
-      }
-
-      if (currentSlide >= totalSlides) currentSlide = totalSlides - 1;
-      if (currentSlide < 0) currentSlide = 0;
-
-      const cardWidth = cards[0].offsetWidth + 16; // card width + gap
-      const offset = currentSlide * cardsPerSlide * cardWidth;
-      track.style.transform = `translateX(-${offset}px)`;
-
-      // Update active dot
-      const allDots = dotsContainer.querySelectorAll('.dot');
-      allDots.forEach((d, i) => {
-        d.classList.toggle('active', i === currentSlide);
-      });
-    }
-
-    function goToSlide(index) {
-      currentSlide = index;
-      updateSlide();
-      resetAutoPlay();
-    }
-
-    function nextSlide() {
-      cardsPerSlide = getCardsPerSlide();
-      const totalSlides = Math.ceil(cards.length / cardsPerSlide);
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateSlide();
-    }
-
-    function resetAutoPlay() {
-      clearInterval(autoPlayInterval);
-      autoPlayInterval = setInterval(nextSlide, 4000);
-    }
-
-    // Initialize dots with click handlers
-    document.querySelectorAll('#leadersDots .dot').forEach(dot => {
-      dot.addEventListener('click', () => {
-        goToSlide(parseInt(dot.dataset.slide));
-      });
-    });
-
-    // Handle resize
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(updateSlide, 200);
-    });
-
-    // Initial setup
-    setTimeout(updateSlide, 100);
-    autoPlayInterval = setInterval(nextSlide, 4000);
-
-    // Pause on hover
-    const carousel = document.querySelector('.leaders-carousel');
-    if (carousel) {
-      carousel.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
-      carousel.addEventListener('mouseleave', () => {
-        autoPlayInterval = setInterval(nextSlide, 4000);
-      });
-    }
-  })();
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
